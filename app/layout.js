@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
+import HeaderWithSocials from "@/components/HeaderWithSocials";
 
 // 1. Визначаємо основний шрифт для тексту
 const eUkraine = localFont({
@@ -73,7 +74,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${eUkraine.variable} ${eUkraineHead.variable} antialiased`}
       >
-        <Header /> {/* 2. Додаємо компонент хедера сюди */}
+        <HeaderWithSocials /> {/* 2. Додаємо компонент хедера сюди */}
         <main>{children}</main>
       </body>
     </html>
